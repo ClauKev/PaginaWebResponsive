@@ -11,6 +11,10 @@ body {
     background-color: #1c1c1c;
 }
 
+html, body {
+    height: 100%;
+  }
+
 #logo {
     width: 250px;
     height: auto;
@@ -88,7 +92,7 @@ header::before {
 }
 
 .ocultar {
-    right: -100%;
+    right: -300%;
 }
 
 .mostrar {
@@ -239,10 +243,10 @@ header::before {
 
     .Home {
         min-height: 120em;
-        min-width: 59em;
         background-image: url(assetsnuevos/a.jpg);
         width: 100%;
         background-position: center;
+        background-size: cover;
         background-repeat: no-repeat;
         justify-content: center;
         align-items: center;
@@ -262,7 +266,8 @@ header::before {
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-left: 4%;
+        position: absolute;
+        right: 20px;
     }
 
     #btn-1 , #btn-2 {
@@ -274,9 +279,9 @@ header::before {
         text-decoration: none;
         border: 2px solid white;
         border-radius: 40px;
-        padding: 15px 100px;
+        padding: 15px 5%;
         margin-top: 40px;
-        margin-right: 10%;
+        margin-right: 0;
     }
 
     #btn-1 {
@@ -295,9 +300,9 @@ header::before {
 
     .Home {
         min-height: 120em;
-        min-width: 70em;
         background-image: url(assetsnuevos/a.jpg);
         background-position: center;
+        background-size: cover;
         background-repeat: no-repeat;
         justify-content: center;
         align-items: center;
@@ -308,7 +313,8 @@ header::before {
         width: 98%;
         height: auto;
         margin-top: 15%;
-        padding-right: 5%;
+        padding-right: 0;
+        margin-left: 0;
     }
 
     .botones {
@@ -317,7 +323,8 @@ header::before {
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-left: 5%;
+        position: absolute;
+        left: 5px
     }
 
     #btn-1 , #btn-2 {
@@ -330,9 +337,9 @@ header::before {
         text-decoration: none;
         border: 2px solid white;
         border-radius: 40px;
-        padding: 15px 100px;
+        padding: 15px;
         margin-top: 40px;
-        margin-right: 20%;
+        margin-left: 0;
     }
 
     #btn-1 {
@@ -346,12 +353,14 @@ header::before {
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 580px) {
+
     #logogrande {
         width: 98%;
         height: auto;
         margin-top: 15%;
-        padding-right: 10%;
+        padding-right: 0;
+        margin: 0;
     }
 
     .botones {
@@ -360,7 +369,60 @@ header::before {
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-left: 3%;
+        margin-left: 0;
+    }
+
+    #btn-1 , #btn-2 {
+        width: 80%;
+        display: inline-block;
+        font-size: 40px;
+        font-weight: 800;
+        font-family: "Sora", sans-serif;
+        letter-spacing: 2px;
+        text-decoration: none;
+        border: 2px solid white;
+        border-radius: 40px;
+        padding: 15px;
+        margin-top: 40px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    #logogrande {
+        width: 98%;
+        height: auto;
+        padding-right: 0;
+        margin: 0;
+        position: absolute;
+        top: 20%;
+        left: 0%;
+    }
+
+    .botones {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+        top: 33%;
+        left: 0%;
+    }
+
+    #btn-1 , #btn-2 {
+        width: 80%;
+        display: inline-block;
+        font-size: 100%;
+        font-weight: 800;
+        font-family: "Sora", sans-serif;
+        letter-spacing: 2px;
+        text-decoration: none;
+        border: 2px solid white;
+        border-radius: 40px;
+        margin-top: 50px;
+        margin-left: 0;
     }
 }
 
