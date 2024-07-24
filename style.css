@@ -206,7 +206,7 @@ header::before {
 
 @media screen and (max-width: 900px) {
 
-    .Home {
+    body {
         min-height: 200vh;
         min-width: 100vh;
         background-image: url(assetsnuevos/a.jpg);
