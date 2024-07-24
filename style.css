@@ -238,8 +238,8 @@ header::before {
 @media screen and (max-width: 900px) {
 
     .Home {
-        min-height: 97em;
-        min-width: 56em;
+        min-height: 120em;
+        min-width: 59em;
         background-image: url(assetsnuevos/a.jpg);
         width: 100%;
         background-position: center;
@@ -295,7 +295,7 @@ header::before {
 
     .Home {
         min-height: 120em;
-        min-width: 56em;
+        min-width: 70em;
         background-image: url(assetsnuevos/a.jpg);
         background-position: center;
         background-repeat: no-repeat;
