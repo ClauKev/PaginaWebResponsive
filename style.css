@@ -208,7 +208,7 @@ header::before {
 
     .Home {
         min-height: 200vh;
-        min-width: 200vh;
+        min-width: 100vh;
         background-image: url(assetsnuevos/a.jpg);
         background-position: center;
         background-repeat: no-repeat;
