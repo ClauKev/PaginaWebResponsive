@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</body>
+</head>
+<body>
+
+    <header>
+
+        <img id="logo" src="assets/images/logo.png" alt="Logo">
+        
+        <nav class="navbar">
+            <ul class="ocultar" id="barrademenu">
+                <li onclick=CerrarMenu() class="iconsmenu"><i class='bx bx-x'></i></li>
+                <li class="OcultarenPC"><a href=index.html#Home>Home</a></li>
+                <li class="OcultarenPC"><a href=index.html#About>Información</a></li>
+                <li class="OcultarenPC"><a href=index.html#noticias>Noticias</a></li>
+                <li class="OcultarenPC"><a href="extras.html" target="_blank">Extras</a></li>
+                <li class="OcultarenPC"><a href="login.html"><img class="iconlogin" src="assets/images/iconos/usuario.png" alt=""></a></li>
+            </ul>
+            <ul id="barrademenu2">
+                <li class="OcultarenMobile"><a href=index.html#Home>Home</a></li>
+                <li class="OcultarenMobile"><a href=index.html#About>Información</a></li>
+                <li class="OcultarenMobile"><a href=index.html#noticias>Noticias</a></li>
+                <li class="OcultarenMobile"><a href="extras.html" target="_blank">Extras</a></li>
+                <li class="OcultarenMobile"><a href="login.html"><img class="iconlogin" src="assets/images/iconos/usuario.png" alt=""></a></li>
+                <li onclick=MostrarMenu() class="iconsmenu"><i class='bx bx-menu' id="menu-icon"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="Home">
+            <img id="logogrande" src="assetsnuevos/logo.png" alt="">
+            <div class="botones">
+                <a href="" id="btn-1">PRECOMPRAR AHORA</a>
+                <a href="" id="btn-2">MÁS INFORMACIÓN</a>
+            </div>
+        </section>
+        <section id="SectionNoticias">
+            <div id="card-area">
+                <div class="wrapper">
+                    <div class="box-area">
+                        <div class="box">
+                            <img alt="" src="assets/images/a1 - copia.jpg">
+                            <div class="overlay">
+                                <h3>Mountaineering</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p><a href="#">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img alt="" src="assets/images/a1 - copia.jpg">
+                            <div class="overlay">
+                                <h3>Scuba Diving</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p><a href="#">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img alt="" src="assets/images/a1 - copia.jpg">
+                            <div class="overlay">
+                                <h3>Travel World</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p><a href="#">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img alt="" src="assets/images/a1 - copia.jpg">
+                            <div class="overlay">
+                                <h3>Travel World</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque modi explicabo libero ea nam. Quod.</p><a href="#">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
