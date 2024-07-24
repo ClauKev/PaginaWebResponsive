@@ -207,8 +207,7 @@ header::before {
 @media screen and (max-width: 900px) {
 
     body {
-        min-height: 200vh;
-        min-width: 100vh;
+        min-height: 300vh;
         background-image: url(assetsnuevos/a.jpg);
         background-position: center;
         background-repeat: no-repeat;
