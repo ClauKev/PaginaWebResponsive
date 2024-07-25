@@ -336,6 +336,10 @@ header::before {
         text-align: center;
     }
 
+    .titulo {
+        margin-bottom: 5%;
+    }
+
     #logogrande {
         width: 98%;
         height: auto;
