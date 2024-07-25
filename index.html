@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Iconos de menu -->
     <script src="script.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-</body>
 </head>
 <body>
 
@@ -47,45 +45,60 @@
         </section>
         <h2 class="titulo">Noticias</h2>
         <section id="SectionNoticias">
-            <div class="wrapper">
-                <div class="card">
-                    <img src="assets/images/a2.jpg" alt="">
-                    <div class="info">
-                        <h6 class ="fecha">Fecha: 18/06/2024</h6>
-                        <h3>PREVENTA ACTIVA</h3>
-                        <p class="parrafonoticia">¡La preventa ya está activa! Al reservar, obtendrás trajes (para 
-                            ti y tu compañera), emotes exclusivos disponibles solo en esta fase, y podrás jugar una
-                             semana antes del lanzamiento oficial. Además, tendrás acceso anticipado al modo 
-                             multijugador. ¿Qué esperas? ¡Únete comprando la preventa de cualquiera de las tres 
-                             versiones!
-                        </p>
+            <div class="container swiper">
+                <div class="slider-wrapper">
+                  <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                      <img src="assets/images/a2.jpg" alt="Notice Image" class="notice-image">
+                      <h6 class ="fecha">Fecha: 18/06/2024</h6>
+                      <h3 class="nombreNoticia">PREVENTA ACTIVA</h3>
+                      <p class="noticiaparrafo">¡La preventa ya está activa! Al reservar, obtienes trajes (Para ti y para tu compañera), emotes exclusivos que solo estarán disponibles en esta fase y podrás jugar una semana antes del lanzamiento oficial</p>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="https://dev.epicgames.com/community/api/documentation/image/meta_tag?path=en-us/uefn/launching-in-unreal-editor-for-fortnite&application_version=1.0" alt="">
-                    <div class="info">
+                    <div class="card-item swiper-slide">
+                        <img src="https://dev.epicgames.com/community/api/documentation/image/meta_tag?path=en-us/uefn/launching-in-unreal-editor-for-fortnite&application_version=1.0" alt="Notice Image" class="notice-image">
                         <h6 class ="fecha">Fecha: 15/01/2024</h6>
-                        <h3>Corrección de Bugs</h3>
-                        <p class="parrafonoticia">Problema al Esconderse: Se solucionó un error que impedía apuntar y disparar mientras el personaje estaba escondido.</p>
+                        <h3 class="nombreNoticia">Corrección de Bugs</h3>
+                        <p class="noticiaparrafo">Problema al Esconderse: Se solucionó un error que impedía apuntar y disparar mientras el personaje estaba escondido.</p>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="https://dev.epicgames.com/community/api/documentation/image/meta_tag?path=en-us/uefn/launching-in-unreal-editor-for-fortnite&application_version=1.0" alt="">
-                    <div class="info">
+                    <div class="card-item swiper-slide">
+                        <img src="https://dev.epicgames.com/community/api/documentation/image/meta_tag?path=en-us/uefn/launching-in-unreal-editor-for-fortnite&application_version=1.0" alt="Notice Image" class="notice-image">
                         <h6 class ="fecha">Fecha: 15/01/2024</h6>
-                        <h3>Corrección de Bugs</h3>
-                        <p class="parrafonoticia">Animaciones al Colgarse: Se corrigió un problema en las animaciones que ocurría cuando el personaje intentaba colgarse de una barra, asegurando que ahora se agarre correctamente.</p>
+                        <h3 class="nombreNoticia">Corrección de Bugs</h3>
+                        <p class="noticiaparrafo">Animaciones al Colgarse: Se corrigió un problema en las animaciones que ocurría cuando el personaje intentaba colgarse de una barra, asegurando que ahora se agarre correctamente.</p>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/a1.jpg" alt="">
-                    <div class="info">
+                    <div class="card-item swiper-slide">
+                        <img src="assets/images/a1.jpg" alt="Notice Image" class="notice-image">
                         <h6 class ="fecha">Fecha: 25/10/2023</h6>
-                        <h3>Introducción de Quick Time Events</h3>
-                        <p class="parrafonoticia">Se incorporo el sistema de Quick Time Events (QTE). Este nuevo sistema desafiará a los jugadores a reaccionar rápidamente a eventos en pantalla</p>
+                        <h3 class="nombreNoticia">Introducción de Quick Time Events</h3>
+                        <p class="noticiaparrafo">Se incorporo el sistema de Quick Time Events (QTE). Este nuevo sistema desafiará a los jugadores a reaccionar rápidamente a eventos en pantalla</p>
+                    </div>
+
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-slide-button swiper-button-prev"></div>
+                  <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+              </div>
+              <!-- Linking SwiperJS script -->
+              <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        </section>
+        <section class="Informacion">
+            <div class="heading">
+                <h2>Sobre el juego</h2>
+            </div>
+            <div class="container">
+                <div class="about">
+                    <div class="about-image">
+                        <img src="assets/images/ciudad 1 - copia.jpg" alt="">
+                    </div>
+                    <div class="about-content">
+                        <h3>Te damos la bienvenida a Tokyo</h3>
+                        <p class="parrafoabout">Sumérgete en un mundo de acción y decisión con este emocionante juego de disparos y RPG de mundo abierto. 
+                            Encarna a Kazuo Seitz, un agente valiente de la Agencia Integradora, en la ciudad corrupta de Tokyo.
+                            Enfréntate a un desafío sin igual mientras luchas contra la propagación de un misterioso líquido negro que otorga un poder inimaginable a quienes se atreven a usarlo, pero a un costo letal. Explora un vasto mundo abierto, repleto de secretos por descubrir.
+                            Domina un arsenal de armas futuristas y desata habilidades sobrenaturales mientras te enfrentas a enemigos despiadados y exploras los oscuros recovecos de Tokyo.
+                            Conviértete en el héroe que la gente necesita y no sucumbas a la tentación de la oscuridad. ¿Estás listo para enfrentar el desafío y descubrir los secretos ocultos de la ciudad?
+                        </p>
                     </div>
                 </div>
             </div>
