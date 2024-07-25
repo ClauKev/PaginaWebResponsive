@@ -546,7 +546,6 @@ h2 {
 
 .card::before {
     content: "";
-    position: absolute;
     top: 0;
     left: 0;
     display: block; width: 100%;
@@ -566,7 +565,6 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
     top: 0;
     left: 0;
 }
