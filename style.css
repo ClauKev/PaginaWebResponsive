@@ -618,10 +618,6 @@ h2 {
         margin-top: 90%;
     }
 
-    .wrapper {
-        position: absolute;
-    }
-
     .card {
         margin-top: 10%;
         width: 95%;
@@ -653,9 +649,16 @@ h2 {
         margin-top: 95%;
     }
 
-    .wrapper {
-        position: absolute;
-        left: 7%;
+    .card {
+        width: 101%;
+        height: 500px;
+        padding: 2rem 1rem;
+        background: #fff;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        transition: 0.5s ease-in-out;
     }
 }
 
@@ -663,11 +666,6 @@ h2 {
 
     #SectionNoticias {
         margin-top: 120%;
-    }
-
-    .wrapper {
-        position: absolute;
-        left: 6%;
     }
 
     .card {
@@ -702,10 +700,6 @@ h2 {
         margin-top: 240%;
     }
 
-    .wrapper {
-        position: absolute;
-    }
-
     .card {
         width: 100%;
         height: 700px;
@@ -738,10 +732,6 @@ h2 {
         margin-top: 310%;
     }
 
-    .wrapper {
-        position: absolute;
-    }
-
     .card {
         width: 100%;
         height: 800px;
@@ -760,10 +750,6 @@ h2 {
     
     #SectionNoticias {
         margin-top: 440%;
-    }
-
-    .wrapper {
-        position: absolute;
     }
 
     .card {
