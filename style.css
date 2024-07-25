@@ -570,8 +570,9 @@ header::before {
     color: #4658ff;
   }
 
+/* ---------Mediascreen Noticias--------- */
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .slider-wrapper {
       margin: 0 10px 40px;
     }
@@ -582,97 +583,255 @@ header::before {
 
 /* ---------Normal About---------  */
 
-.Informacion {
-    height: 200vh;
-}
-
-.heading {
-    width: 90%;
+/* 1 */
+.aboutgame{
+    min-height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 20px auto;
-
+    background-color:  #1c1c1c;
 }
 
-.heading h2 {
-    margin-bottom: 25px;
-    position: relative;
-}
-
-.heading h2::after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 5px;
-    display: block;
-    margin: 0 auto;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px 20px;
-}
-.about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.about-image {
-    flex: 1;
-    margin-right: 40px;
+.about-section{
+    background: url(assets/images/ciudad\ 1.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #1c1c1c;
     overflow: hidden;
+    padding: 100px 0;
 }
-.about-image img {
-    max-width: 100%;
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #1c1c1c;
+    padding: 80px;
+}
+
+.inner-container h3{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 120%;
+    color: #ffffff;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.fotomediascreen{
+    width: 140%;
     height: auto;
-    display: block;
-    transition: 0.5s ease;
+    display: none;
 }
 
-.about-image:hover img {
-    transform: scale(1.2);
+.fotomediascreen img{
+    width: 100%;
+    height: auto;
 }
 
-.about-content {
-    flex:1;
-}
-.about-content h3 {
-    font-size: 23px;
-    margin-bottom: 15px;
-    color: #fff;
+/* 2 */
 
+.about-section2{
+    background: url(assetsnuevos/vehiculo.jpg) no-repeat right;
+    background-size: 55%;
+    background-color: #1c1c1c;
+    overflow: hidden;
+    padding: 100px 0;
 }
-.about-content p {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #fff;
+
+.inner-container2{
+    width: 55%;
+    float: left;
+    background-color: #1c1c1c;
+    padding: 150px;
+}
+
+.inner-container2 h3{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* 3 */
+
+.aboutgame2{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #1c1c1c;
+    padding-top:10% ;
+}
+
+.about-section3{
+    background: url(assetsnuevos/ciudad\ 2.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #1c1c1c;
+    overflow: hidden;
+    padding: 100px 0;
 }
 
 /* --------Mediascreen About---------  */
 
-@media screen and (max-width: 768px) {
-    .heading {
-        padding: 0px 20px;
+@media screen and (max-width:1200px){
+    .inner-container , .inner-container2{
+        padding: 80px;
     }
-    .container {
+}
+
+@media screen and (max-width:1000px){
+    .about-section , .about-section2{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container , .inner-container2{
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-width:600px){
+
+    .fotomediascreen{
+        display: block;
+    }
+
+    .about-section , .about-section2{
         padding: 0;
     }
-    .about {
-        flex-direction: column;
-        padding: 20px;
+    .inner-container , .inner-container2{
+        width: 100%;
     }
-    .about-image {
-        margin-right: 0px;
-        margin-bottom: 20px;
-    }
-    .about-content {
-        padding: 0px;
-        font-size: 16px;
+}
+
+/* ---------Normal Masinfo--------- */
+
+.moreinfo{
+    min-height: 100vh;
+    text-align: center;
+    background-color:  #1c1c1c;
+    padding: 10%;
+}
+
+.parrafoabout{
+    margin-top: 1%;
+}
+
+.preguntainfo {
+    margin-top: 3%;
+}
+
+iframe {
+    margin-top: 3%;
+}
+
+/* ---------Normal Footer--------- */
+
+.pie-pagina{
+    width: 100%;
+    background: radial-gradient(circle at 48% -15%, rgb(120, 120, 120) 0%, #0a141d 20%);
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box .logofigura{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box .logofigura img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box2 img{
+    width: 150px;
+}
+
+.pie-pagina .grupo-1 .box h4{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+    transform: scale(1.1);
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+}
+.pie-pagina .grupo-2 p{
+    font-size: 12px;
+    color: #ffffff67;
+}
+#contacto {
+    align-items: center;
+    justify-content: space-between;
+}
+#emailfooter {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    width: 70%;
+    height: 30%;
+}
+#botonfooter {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+#pegi {
+    width: 100px;
+    height: auto;
+}
+.iconemail {
+    width: 20px;
+    height: auto;
+}
+
+
+
+/* --------Mediascreen Footer---------  */
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
     }
 }
 
