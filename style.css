@@ -172,6 +172,13 @@ header::before {
 
 }
 
+@media screen and (max-width: 500px) {
+    .iconsmenu {
+        margin-right: 0px;
+    
+    }
+}
+
 @media screen and (max-width: 300px) {
 
     #logo {
@@ -235,6 +242,7 @@ header::before {
 /* ---------Mediascreen Home--------- */
 
 @media screen and (max-width: 1200px) {
+
     #logogrande {
         width: 95%;
         height: auto;
@@ -244,7 +252,7 @@ header::before {
     
     #btn-1 , #btn-2 {
         display: inline-block;
-        font-size: 50px;
+        font-size: 25px;
         font-weight: 800;
         font-family: "Sora", sans-serif;
         letter-spacing: 2px;
@@ -512,7 +520,7 @@ h2 {
 
 .wrapper {
     display: flex;
-    width: 70%;
+    width: 90%;
     justify-content: space-around;
 }
 
@@ -586,13 +594,28 @@ h2 {
 
 /* ---------Mediascreen Noticias--------- */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
+    .card {
+        margin-top: 10%;
+        width: 100%;
+        height: 500px;
+        padding: 2rem 1rem;
+        background: #fff;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        transition: 0.5s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 960px) {
     #SectionNoticias .wrapper {
         flex-direction: column;
     }
 
     #SectionNoticias {
-        margin-top: 85%;
+        margin-top: 90%;
     }
 
     .wrapper {
@@ -600,6 +623,7 @@ h2 {
     }
 
     .card {
+        margin-top: 10%;
         width: 95%;
         height: 500px;
         padding: 2rem 1rem;
@@ -624,14 +648,16 @@ h2 {
     }
 }
 
+@media screen and (max-width: 960px) {
+    #SectionNoticias {
+        margin-top: 130%;
+    }
+}
+
 @media screen and (max-width: 670px) {
 
     #SectionNoticias {
-        margin-top: 90%;
-    }
-
-    .wrapper {
-        position: absolute;
+        margin-top: 160%;
     }
 
     .card {
@@ -663,25 +689,59 @@ h2 {
 @media screen and (max-width: 560px) {
 
     #SectionNoticias {
-        margin-top: 60%;
+        margin-top: 270%;
     }
 
     .wrapper {
         position: absolute;
-        left: 25%;
+    }
+
+    .card {
+        width: 100%;
+        height: 700px;
+        padding: 2rem 1rem;
+        background: #fff;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    .card .info .fecha {
+        font-size: 20px;
+    }
+
+    .card .info h3 {
+        font-size: 30px;
+    }
+
+    .card .info .parrafonoticia {
+        font-size: 25px;
     }
 
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 480px) {
 
     #SectionNoticias {
-        margin-top: 70%;
+        margin-top: 310%;
     }
 
     .wrapper {
         position: absolute;
-        left: 20%;
+    }
+
+    .card {
+        width: 110%;
+        height: 800px;
+        padding: 2rem 1rem;
+        background: #fff;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        transition: 0.5s ease-in-out;
     }
 
 }
@@ -689,12 +749,48 @@ h2 {
 @media screen and (max-width: 400px) {
     
     #SectionNoticias {
-        margin-top: 90%;
+        margin-top: 440%;
+    }
+
+    .wrapper {
+        position: absolute;
+    }
+
+    .card {
+        width: 110%;
+        height: 900px;
+        padding: 2rem 1rem;
+        background: #fff;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+}
+
+@media screen and (max-width: 340px) {
+    
+    #SectionNoticias {
+        margin-top: 460%;
     }
 
     .wrapper {
         position: absolute;
         left: 15%;
+    }
+
+    .card {
+        width: 110%;
+        height: 950px;
+        padding: 2rem 1rem;
+        background: #fff;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        transition: 0.5s ease-in-out;
     }
 
 }
