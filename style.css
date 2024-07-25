@@ -650,14 +650,24 @@ h2 {
 
 @media screen and (max-width: 960px) {
     #SectionNoticias {
-        margin-top: 130%;
+        margin-top: 95%;
+    }
+
+    .wrapper {
+        position: absolute;
+        left: 7%;
     }
 }
 
 @media screen and (max-width: 670px) {
 
     #SectionNoticias {
-        margin-top: 160%;
+        margin-top: 120%;
+    }
+
+    .wrapper {
+        position: absolute;
+        left: 6%;
     }
 
     .card {
@@ -689,7 +699,7 @@ h2 {
 @media screen and (max-width: 560px) {
 
     #SectionNoticias {
-        margin-top: 270%;
+        margin-top: 240%;
     }
 
     .wrapper {
@@ -733,7 +743,7 @@ h2 {
     }
 
     .card {
-        width: 110%;
+        width: 100%;
         height: 800px;
         padding: 2rem 1rem;
         background: #fff;
@@ -757,7 +767,7 @@ h2 {
     }
 
     .card {
-        width: 110%;
+        width: 100%;
         height: 900px;
         padding: 2rem 1rem;
         background: #fff;
@@ -773,17 +783,12 @@ h2 {
 @media screen and (max-width: 340px) {
     
     #SectionNoticias {
-        margin-top: 460%;
-    }
-
-    .wrapper {
-        position: absolute;
-        left: 15%;
+        margin-top: 640%;
     }
 
     .card {
-        width: 110%;
-        height: 950px;
+        width: 100%;
+        height: 1050px;
         padding: 2rem 1rem;
         background: #fff;
         position: relative;
