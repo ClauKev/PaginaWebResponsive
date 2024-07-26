@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Iconos de menu -->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/5e1bfacb25.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script> <!-- Mas iconos -->
+</head>
+<body>
+    <header class=>
+        <img id="logo" src="assets/images/logo.png" alt="Logo">
+        <nav class="navbar">
+            <ul class="ocultar" id="barrademenu">
+                <li onclick=CerrarMenu() class="iconsmenu"><i class='bx bx-x'></i></li>
+                <li class="OcultarenPC"><a href=index.html#Home>Home</a></li>
+                <li class="OcultarenPC"><a href=index.html#About>Información</a></li>
+                <li class="OcultarenPC"><a href=index.html#noticias>Noticias</a></li>
+                <li class="OcultarenPC"><a href="extras.html" target="_blank">Extras</a></li>
+                <li class="OcultarenPC"><a href="login.html"><img class="iconlogin" src="assets/images/iconos/usuario.png" alt=""></a></li>
+            </ul>
+            <ul id="barrademenu2">
+                <li class="OcultarenMobile"><a href=index.html#Home>Home</a></li>
+                <li class="OcultarenMobile"><a href=index.html#About>Información</a></li>
+                <li class="OcultarenMobile"><a href=index.html#noticias>Noticias</a></li>
+                <li class="OcultarenMobile"><a href="extras.html" target="_blank">Extras</a></li>
+                <li class="OcultarenMobile"><a href="login.html"><img class="iconlogin" src="assets/images/iconos/usuario.png" alt=""></a></li>
+                <li onclick=MostrarMenu() class="iconsmenu"><i class='bx bx-menu' id="menu-icon"></i></li>
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <section class="HomeExtra">
+            <img id="logogrande" src="assetsnuevos/logo.png" alt="">
+        </section>
+        <h2 class="titulo">DLC y Modos de juegos</h2>
+        <section class="Extras">
+            <div class="slider">
+                <div class="list">
+                    <div class="item active">
+                        <img src="assetsnuevos/Extra/Futbol.jpeg">
+                        <div class="content">
+                            <p>Modo de juego</p>
+                            <h2>Immortal Triumph</h2>
+                            <p>
+                                En el modo fútbol de tu juego, disfruta de partidos con físicas realistas y controles intuitivos. Experimenta el 
+                                control preciso del balón, planifica estrategias con tu equipo y participa en diversos torneos. Elige a tus jugadores titulares para 
+                                una experiencia auténtica. Juega en una variedad de estadios, cada uno con su ambiente único. Los partidos en casa mejoran el 
+                                rendimiento de tu equipo, mientras que los de visitante presentan desafíos adicionales para mayor realismo y estrategia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assetsnuevos/Extra/dance.png">
+                        <div class="content">
+                            <p>Modo de juego</p>
+                            <h2>Rhythm</h2>
+                            <p>
+                                Este modo de juego te invita a sumergirte en una experiencia de juego llena de ritmo y música. Te encontrarás moviéndote al son de las canciones, siguiendo los pasos en la pantalla con tus movimientos. Es una 
+                                oportunidad perfecta para dejar salir tu lado más divertido y activo, ya que podrás disfrutar de una sesión de baile en la comodidad 
+                                de tu hogar. ¡Prepárate para moverte, sudar y pasar un buen rato mientras te diviertes al ritmo de la música!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assetsnuevos/ciudad 3.jpg">
+                        <div class="content">
+                            <p>DLC</p>
+                            <h2 class="DLC">Expansiones Épicas: Contenido Adicional Incluido</h2>
+                            <p>
+                                Sumérgete aún más en el mundo de nuestro juego con las expansiones épicas ya incorporadas. Desde nuevos desafíos 
+                                y misiones hasta un modo de juego de futbol y baile. Estos DLCs te ofrecen una experiencia ampliada y enriquecida. Cada paquete 
+                                de contenido adicional ha sido diseñado para mantener la emoción y ofrecerte nuevas formas de disfrutar del juego, garantizando horas
+                                adicionales de diversión y exploración. ¡Prepárate para descubrir todo lo que estas expansiones tienen para ofrecer!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assetsnuevos/Extra/Multiplayer.jpg">
+                        <div class="content">
+                            <p>Modo de juego</p>
+                            <h2 class="Multiplayer">Multijugador</h2>
+                            <p>
+                                En el multijugador, los modos competitivos incluyen Team Deathmatch, Todos contra todos, Hardcore y Team Objective, donde los jugadores compiten por eliminaciones
+                                 o cumplen objetivos específicos. Los modos cooperativos abarcan Co-op Adventure, con misiones narrativas para 
+                                 tres jugadores; Co-op Arena, que enfrenta a los jugadores contra oleadas de enemigos; y Co-op Hunter Arena,
+                                  que combina equipos de jugadores con NPCs controlados por la IA.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- button arrows -->
+                <div class="arrows">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure class="logofigura">
+                    <a href="#">
+                        <img src="assetsnuevos/logo2.png" alt="Logo de FGSF" id="logofooter">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h4>CONTACTO</h4>
+                <form id="contacto">
+                    <img class="iconemail" src="assets/images/iconos/envelope.png" alt="">
+                    <input type="email" id="emailfooter" placeholder="Ingresa tu correo">
+                    <button type="submit" id="botonfooter">Enviar</button>
+                </form>
+            </div>
+            <div class="box">
+                <h4>SÍGUEME</h4>
+                <div class="red-social">
+                    <a href="#" class="fa fa-steam" target="_blank"></a>
+                    <a href="https://www.instagram.com/firearmshowdownfactor/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://x.com/FirearmSFactor" class="fa fa-twitter" target="_blank"></a>
+                    <a href="#" class="fa-brands fa-itch-io"></a>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="assetsnuevos/PEGI_16.png" alt="pegi" id="pegi">
+            </div>
+        </div>
+        <div class="grupo-2">
+            <p><a class="TC" href="">Términos de Servicio</a> / <a class="TC" href="">Política de Privacidad</a> / <a class="TC" href="">Legal</a></p>
+            <p>© Todo el contenido, marcas, nombres y logotipos de terceros se usan con licencia y son propiedad de sus respectivos dueños. Todos los derechos reservados.</p>
+        </div>
+    </footer>   
+</body>
+</html>

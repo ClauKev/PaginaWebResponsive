@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylepayment.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Iconos de menu -->
+    <script src="https://kit.fontawesome.com/5e1bfacb25.js" crossorigin="anonymous"></script> <!-- Mas iconos -->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script> <!-- Mas iconos -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <img id="logo" src="assets/images/logo.png" alt="Logo">
+
+        <nav class="navbar">
+            <ul class="ocultar" id="barrademenu">
+                <li onclick=CerrarMenu() class="iconsmenu"><i class='bx bx-x'></i></li>
+                <li class="OcultarenPC"><a href=index.html#Home>Home</a></li>
+                <li class="OcultarenPC"><a href=index.html#About>Información</a></li>
+                <li class="OcultarenPC"><a href=index.html#noticias>Noticias</a></li>
+                <li class="OcultarenPC"><a href="extras.html" target="_blank">Extras</a></li>
+                <li class="OcultarenPC"><a href="login.html"><img class="iconlogin"
+                            src="assets/images/iconos/usuario.png" alt=""></a></li>
+            </ul>
+            <ul id="barrademenu2">
+                <li class="OcultarenMobile"><a href=index.html#Home>Home</a></li>
+                <li class="OcultarenMobile"><a href=index.html#About>Información</a></li>
+                <li class="OcultarenMobile"><a href=index.html#noticias>Noticias</a></li>
+                <li class="OcultarenMobile"><a href="extras.html">Extras</a></li>
+                <li class="OcultarenMobile"><a href="login.html"><img class="iconlogin"
+                            src="assets/images/iconos/usuario.png" alt=""></a></li>
+                <li onclick=MostrarMenu() class="iconsmenu"><i class='bx bx-menu' id="menu-icon"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="titulo">Selecciona una Edicion</h2>
+        <section id="SectionNoticias">
+            <div class="container swiper">
+                <div class="slider-wrapper">
+                  <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                      <img src="assets/images/a2.jpg" alt="Notice Image" class="notice-image">
+                      <h3 class="nombreNoticia">FireArm Showdown Factor</h3>
+                      <p class="noticiaparrafo">Este juego ofrece acceso anticipado a su contenido, permitiéndote explorar la historia principal y disfrutar de 
+                        los modos de juego descritos en la sección de extras. Además, los compradores durante la preventa tendrán acceso a contenido exclusivo 
+                        que incluye ropa, emotes y muchas otras sorpresas que enriquecerán tu experiencia desde el inicio.</p>
+                        <a href="" id="btn-1">$11.99</a>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="https://dev.epicgames.com/community/api/documentation/image/meta_tag?path=en-us/uefn/launching-in-unreal-editor-for-fortnite&application_version=1.0" alt="Notice Image" class="notice-image">
+                        <h3 class="nombreNoticia">FireArm Showdown Factor Hidden Files Edition</h3>
+                        <p class="noticiaparrafo">Esta edición especial incluye un DLC jugable centrado en la intrigante historia de las 2 Espadas, 
+                            proporcionando una experiencia adicional única en el juego. Además, cuenta con una selección ampliada de ropa y personalización 
+                            en comparación con la edición anterior, ofreciendo aún más opciones para personalizar tu personaje.</p>
+                        <a href="" id="btn-1">$23.99</a>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+        </section>
+
+        <section class="container">
+
+            <form action="">
+
+                <div class="row">
+
+                    <div class="col">
+
+                        <h3 class="title">Sistema de pago</h3>
+
+                        <div class="inputBox">
+                            <span>Email :</span>
+                            <input type="email" placeholder="example@example.com">
+                            <label for="" id="ErrorEmail">Error en el email</label>
+                        </div>
+                        <div class="inputBox">
+                            <span>País :</span>
+                            <input type="text" placeholder="Argentina">
+                            <label for="" id="ErrorPais">El campo no puede estar vacio</label>
+                        </div>
+                        <div class="inputBox">
+                            <span>Localidad :</span>
+                            <input type="text" placeholder="Capital Federal">
+                            <label for="" id="ErrorLoca">El campo no puede estar vacio</label>
+                        </div>
+                        <div class="inputBox">
+                            <span>Calle :</span>
+                            <input type="text" placeholder="Av. Corrientes 2037">
+                            <label for="" id="ErrorCalle">El campo no puede estar vacio</label>
+                        </div>
+
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>Codigo Postal :</span>
+                                <input type="text" oninput="formatCVV(this)" placeholder="1234" pattern="\d{1,4}"
+                                    maxlength="4">
+                                <label for="" id="ErrorCodP">El campo debe contener 4 digitos</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h3 class="title">Pago</h3>
+
+                        <div class="inputBox">
+                            <span>Tarjetas aceptadas :</span>
+                            <img src="assetsnuevos/system payment/card_img.png" alt="">
+                        </div>
+                        <div class="inputBox">
+                            <span>Nombre en la tarjeta :</span>
+                            <input type="text" placeholder="Miku Hatsune" required>
+                            <label for="" id="ErrorNombre">El campo no puede estar vacio</label>
+                        </div>
+                        <div class="inputBox">
+                            <span>Número de la tarjeta :</span>
+                            <input type="text" oninput="formatCardNumber(this)" placeholder="1111-2222-3333-4444"
+                                pattern="\d{1,19}" maxlength="19" required>
+                            <label for="" id="ErrorNT">El campo debe contener 16 digitos</label>
+                        </div>
+                        <div class="inputBox">
+                            <span>Teléfono :</span>
+                            <input type="text" oninput="formatPhoneNumber(this)" placeholder="11 1234-1234" required>
+                            <label for="" id="ErrorT">El campo debe contener 10 digitos</label>
+                        </div>
+
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>Caducidad :</span>
+                                <input type="text" id="expiryDate" oninput="formatDate(this)" placeholder="MM/AAAA"
+                                    pattern="\d{1,5}" maxlength="7" required>
+                                <label for="" id="ErrorCadu">El campo debe contener 6 digitos</label>
+                            </div>
+                            <div class="inputBox">
+                                <span>CVV :</span>
+                                <input type="text" id="CVV" oninput="formatCVV(this)" placeholder="123" pattern="\d{1,3}"
+                                    maxlength="3" required>
+                                <label for="" id="ErrorCVV">El campo debe contener 3 digitos</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button type="button" class="submit-btn" onclick="ValidarPago()">Pagar</button>
+
+            </form>
+
+        </section>
+
+    </main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure class="logofigura">
+                    <a href="#">
+                        <img src="assetsnuevos/logo2.png" alt="Logo de FGSF" id="logofooter">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h4>CONTACTO</h4>
+                <form id="contacto">
+                    <img class="iconemail" src="assets/images/iconos/envelope.png" alt="">
+                    <input type="email" id="emailfooter" placeholder="Ingresa tu correo">
+                    <button type="submit" id="botonfooter">Enviar</button>
+                </form>
+            </div>
+            <div class="box">
+                <h4>SÍGUEME</h4>
+                <div class="red-social">
+                    <a href="#" class="fa fa-steam" target="_blank"></a>
+                    <a href="https://www.instagram.com/firearmshowdownfactor/" target="_blank"
+                        class="fa fa-instagram"></a>
+                    <a href="https://x.com/FirearmSFactor" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://legend02.itch.io/firearm-gale-showdown-factor" class="fa-brands fa-itch-io"></a>
+                </div>
+            </div>
+            <div class="box2">
+                <img src="assetsnuevos/PEGI_16.png" alt="pegi" id="pegi">
+            </div>
+        </div>
+        <div class="grupo-2">
+            <p><a class="TC" href="">Términos de Servicio</a> / <a class="TC" href="">Política de Privacidad</a> / <a
+                    class="TC" href="">Legal</a></p>
+            <p>© Todo el contenido, marcas, nombres y logotipos de terceros se usan con licencia y son propiedad de sus
+                respectivos dueños. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

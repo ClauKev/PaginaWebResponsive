@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  transition: all .2s linear;
+}
+
+body {
+  background-color: #2b2b2b;
+}
+
+#logo {
+  width: 25%;
+  height: auto;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+/* ---------Normal Navbar--------- */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100000;
+}
+
+header.scrolled {
+  border-bottom: 2px solid white; /* Línea blanca que aparece al hacer scroll */
+}
+
+header::before {
+
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .1);
+  backdrop-filter: blur(10px);
+  z-index: -1;
+
+}
+
+.navbar .iconsmenu {
+  font-size: 65px;
+  color: white;
+  right: 5%;
+}
+
+.iconlogin {
+  width: 25px;
+  margin-left: 10px;
+}
+
+.navbar a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-family: "Sora", sans-serif;
+  font-weight: 500px;
+  margin: 0 15px;
+}
+
+.navbar #barrademenu2 {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.iconsmenu {
+  display: none;
+  margin-right: 50px;
+
+}
+
+.ocultar {
+  right: -300%;
+}
+
+.mostrar {
+  right: 0;
+}
+
+.OcultarenPC{
+  display: none;
+}
+
+#barrademenu {  
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 400px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, .1);
+  backdrop-filter: blur(50px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1) ;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transition: 0.75s ease;
+}
+
+/* ---------Mediascreen Navbar--------- */
+
+@media screen and (max-width: 1200px) {
+  .navbar #barrademenu2 a {
+      font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 944px) {
+
+  #logo {
+      width: 65%;
+      height: auto;
+  }
+
+  .iconsmenu {
+      display: block;
+  }
+
+  .OcultarenMobile{
+      display: none;
+  }
+
+  .OcultarenPC{
+      display: block;
+  }
+
+  .navbar li:first-child {
+      margin-right: auto;
+  }
+
+  #barrademenu li {
+      width: 100%;
+      margin-top: 80px;
+  }
+
+  #barrademenu .iconlogin {
+      width: 50px;
+      height: auto;
+  }
+
+  #barrademenu a {
+      width: 100%;
+      font-size: 40px;
+      margin-left: 40px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .iconsmenu {
+      margin-right: 0px;
+  
+  }
+}
+
+@media screen and (max-width: 300px) {
+
+  #logo {
+      width: 75%;
+      height: auto;
+  }
+
+}
+
+/* ---------Normal Edicion---------  */
+
+.titulo {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#btn-1 {
+  width: 50%;
+  display: inline-block;
+  font-size: 200%;
+  font-weight: 800;
+  font-family: "Sora", sans-serif;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 15px;
+  margin-top: 40px;
+  margin-left: 0;
+  color: white;
+  text-align: center;
+}
+
+#SectionNoticias {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  z-index: 100;
+}
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 700px;
+  margin: 0 70px 55px;
+}
+.card-list .card-item {
+  height: auto;
+  color: #fff;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+}
+.card-list .card-item .notice-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+.card-list .card-item .noticiaparrafo {
+  font-size: 1.15rem;
+  color: #e3e3e3;
+  font-weight: 500;
+  margin: 14px 0 40px;
+  padding: 2%;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+  background: #fff;
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+}
+.slider-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.slider-wrapper .swiper-slide-button {
+  color: #fff;
+  margin-top: -55px;
+  transition: 0.2s ease;
+}
+.slider-wrapper .swiper-slide-button:hover {
+  color: #4658ff;
+}
+
+/* ---------Mediascreen Edicion--------- */
+
+@media screen and (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 10px 40px;
+  }
+  .slider-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
+
+/* ---------Normal Payment--------- */
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 150vh;
+  transform: translateY(100px);
+  z-index: 1;
+}
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #27ae60;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+  background: #2ecc71;
+}
+
+#ErrorEmail, #ErrorPais, #ErrorLoca, #ErrorCalle, #ErrorCodP,
+#ErrorNombre, #ErrorNT, #ErrorT, #ErrorCadu, #ErrorCVV {
+  color: red;
+  font-size: 16px;
+  font-weight: 800;
+  display: none;
+}
+
+/* ---------Normal Footer--------- */
+
+.pie-pagina{
+  width: 100%;
+  background: radial-gradient(circle at 48% -15%, rgb(120, 120, 120) 0%, #0a141d 20%);
+  background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box .logofigura{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box .logofigura img{
+  width: 250px;
+}
+
+.pie-pagina .grupo-1 .box2 img{
+  width: 150px;
+}
+
+.pie-pagina .grupo-1 .box h4{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+.pie-pagina .grupo-1 .box p{
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+  color: aqua;
+  transform: scale(1.1);
+}
+.pie-pagina .grupo-2{
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+}
+.pie-pagina .grupo-2 p{
+  font-size: 12px;
+  color: #ffffff67;
+}
+#contacto {
+  align-items: center;
+  justify-content: space-between;
+}
+#emailfooter {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  width: 70%;
+  height: 30%;
+}
+#botonfooter {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+#pegi {
+  width: 100px;
+  height: auto;
+}
+.iconemail {
+  width: 20px;
+  height: auto;
+}
+
+.TC {
+  color: white;
+}
+
+
+
+/* --------Mediascreen Footer---------  */
+
+@media screen and (max-width:800px){
+  .pie-pagina .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+  }
+
+  
+}

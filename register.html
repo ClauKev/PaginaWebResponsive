@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | FirearmSFactor</title>
+  <link rel="stylesheet" href="stylesLoginRegister.css">
+  <script src="script.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Iconos de menu -->
+  <script src="https://kit.fontawesome.com/5e1bfacb25.js" crossorigin="anonymous"></script> <!-- Mas iconos -->
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script> <!-- Mas iconos -->
+</head>
+<body>
+
+  <header>
+
+    <img id="logo" src="assets/images/logo.png" alt="Logo">
+    
+    <nav class="navbar">
+        <ul class="ocultar" id="barrademenu">
+            <li onclick=CerrarMenu() class="iconsmenu"><i class='bx bx-x'></i></li>
+            <li class="OcultarenPC"><a href=index.html#Home>Home</a></li>
+            <li class="OcultarenPC"><a href=index.html#About>Información</a></li>
+            <li class="OcultarenPC"><a href=index.html#noticias>Noticias</a></li>
+            <li class="OcultarenPC"><a href="extras.html" target="_blank">Extras</a></li>
+            <li class="OcultarenPC"><a href="login.html"><img class="iconlogin" src="assets/images/iconos/usuario.png" alt=""></a></li>
+        </ul>
+        <ul id="barrademenu2">
+            <li class="OcultarenMobile"><a href=index.html#Home>Home</a></li>
+            <li class="OcultarenMobile"><a href=index.html#About>Información</a></li>
+            <li class="OcultarenMobile"><a href=index.html#noticias>Noticias</a></li>
+            <li class="OcultarenMobile"><a href="extras.html">Extras</a></li>
+            <li class="OcultarenMobile"><a href="login.html"><img class="iconlogin" src="assets/images/iconos/usuario.png" alt=""></a></li>
+            <li onclick=MostrarMenu() class="iconsmenu"><i class='bx bx-menu' id="menu-icon"></i></li>
+        </ul>
+    </nav>
+  </header>
+  <main id="MainRegister">
+    <div class="wrapper">
+      <form action="" id="formulario">
+        <h1>Registrarse</h1>
+        <div class="input-box">
+          <input type="email" name="email" id="email" placeholder="Ej: HatsuneMiku@gmail.com" required>
+          <i class='bx bxs-envelope' ></i>
+          <label for="" id="ErrorEmail">Error en el email</label>
+        </div>
+        <div class="input-box">
+          <input type="text" name="usuario" id="usuario" placeholder="Username o email" required>
+          <i class='bx bxs-user'></i>
+          <label for="" id="ErrorUsuario">Error en el usuario</label>
+        </div>
+        <div class="input-box">
+          <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña" required>
+          <i class='bx bxs-lock-alt' ></i>
+          <label for="" id="ErrorContrasenia">Error en la contraseña</label>
+        </div>
+        <div class="input-box">
+          <input type="password" name="Ccontrasenia" id="Ccontrasenia" placeholder="Confirmar contraseña" required>
+          <i class='bx bxs-lock-alt' ></i>
+          <label for="" id="ErrorCcontrasenia">No coinciden las contraseñas</label>
+        </div>
+        <div class="input-box">
+          <label for="">Fecha de nacimiento</label>
+          <input id="Fecha" type="date" min="1960-01-01" onfocus="this.max=new Date().toISOString().split('T')[0]" required/>
+          <i class='bx bxs-calendar' id="iconFecha" ></i>
+          <label for="" id="ErrorFecha">Error en la fecha</label>
+        </div>
+        <button type="button" class="btnR" onclick="ValidarRegister()">Registrarse</button>
+      </form>
+    </div>
+  </main>
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure class="logofigura">
+                <a href="#">
+                    <img src="assetsnuevos/logo2.png" alt="Logo de FGSF" id="logofooter">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h4>CONTACTO</h4>
+            <form id="contacto">
+                <img class="iconemail" src="assets/images/iconos/envelope.png" alt="">
+                <input type="email" id="emailfooter" placeholder="Ingresa tu correo">
+                <button type="submit" id="botonfooter">Enviar</button>
+            </form>
+        </div>
+        <div class="box">
+            <h4>SÍGUEME</h4>
+            <div class="red-social">
+                <a href="#" class="fa fa-steam" target="_blank"></a>
+                <a href="https://www.instagram.com/firearmshowdownfactor/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://x.com/FirearmSFactor" class="fa fa-twitter" target="_blank"></a>
+                <a href="#" class="fa-brands fa-itch-io"></a>
+            </div>
+        </div>
+        <div class="box2">
+            <img src="assetsnuevos/PEGI_16.png" alt="pegi" id="pegi">
+        </div>
+    </div>
+    <div class="grupo-2">
+        <p><a class="TC" href="">Términos de Servicio</a> / <a class="TC" href="">Política de Privacidad</a> / <a class="TC" href="">Legal</a></p>
+        <p>© Todo el contenido, marcas, nombres y logotipos de terceros se usan con licencia y son propiedad de sus respectivos dueños. Todos los derechos reservados.</p>
+    </div>
+  </footer>   
+</body>
+</html>
