@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login | FirearmSFactor</title>
+  <title>FirearmSFactor | Registrarse</title>
   <link rel="stylesheet" href="stylesLoginRegister.css">
+  <link rel="icon" href="assetsnuevos/LogoIcon.icon">
   <script src="script.js"></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Iconos de menu -->
   <script src="https://kit.fontawesome.com/5e1bfacb25.js" crossorigin="anonymous"></script> <!-- Mas iconos -->
@@ -64,6 +65,9 @@
           <input id="Fecha" type="date" min="1960-01-01" onfocus="this.max=new Date().toISOString().split('T')[0]" required/>
           <i class='bx bxs-calendar' id="iconFecha" ></i>
           <label for="" id="ErrorFecha">Error en la fecha</label>
+        </div>
+        <div class="tienecuenta">
+          <a href="login.html">Ya tienes cuenta?</a>
         </div>
         <button type="button" class="btnR" onclick="ValidarRegister()">Registrarse</button>
       </form>

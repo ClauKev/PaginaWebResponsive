@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FirearmSFactor | Registrarse</title>
     <link rel="stylesheet" href="stylepayment.css">
+    <link rel="icon" href="assetsnuevos/LogoIcon.icon">
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Iconos de menu -->
@@ -50,20 +51,20 @@
                 <div class="slider-wrapper">
                   <div class="card-list swiper-wrapper">
                     <div class="card-item swiper-slide">
-                      <img src="assets/images/a2.jpg" alt="Notice Image" class="notice-image">
+                      <img src="assetsnuevos/Ediciones/Normal edition.jpg" alt="Notice Image" class="notice-image">
                       <h3 class="nombreNoticia">FireArm Showdown Factor</h3>
                       <p class="noticiaparrafo">Este juego ofrece acceso anticipado a su contenido, permitiéndote explorar la historia principal y disfrutar de 
                         los modos de juego descritos en la sección de extras. Además, los compradores durante la preventa tendrán acceso a contenido exclusivo 
                         que incluye ropa, emotes y muchas otras sorpresas que enriquecerán tu experiencia desde el inicio.</p>
-                        <a href="" id="btn-1">$11.99</a>
+                        <button type="button" id="btnNormalEdition" class="btnPayment" data-price="11.99" onclick="EnviaraPayment(this)"><a href="#SystemPayment" id="btn-1">$11.99</a></button>
                     </div>
                     <div class="card-item swiper-slide">
-                        <img src="https://dev.epicgames.com/community/api/documentation/image/meta_tag?path=en-us/uefn/launching-in-unreal-editor-for-fortnite&application_version=1.0" alt="Notice Image" class="notice-image">
+                        <img src="assetsnuevos/Ediciones/Hidden Files Edtiion.jpg" alt="Notice Image" class="notice-image">
                         <h3 class="nombreNoticia">FireArm Showdown Factor Hidden Files Edition</h3>
                         <p class="noticiaparrafo">Esta edición especial incluye un DLC jugable centrado en la intrigante historia de las 2 Espadas, 
                             proporcionando una experiencia adicional única en el juego. Además, cuenta con una selección ampliada de ropa y personalización 
-                            en comparación con la edición anterior, ofreciendo aún más opciones para personalizar tu personaje.</p>
-                        <a href="" id="btn-1">$23.99</a>
+                            en comparación con la edición anterior, ofreciendo más opciones para personalizar tu equipamiento.</p>
+                        <button type="button" id="btnFilesEdition" class="btnPayment" data-price="23.99" onclick="EnviaraPayment(this)"><a href="#SystemPayment" id="btn-1">$23.99</a></button>
                     </div>
                   </div>
                   <div class="swiper-pagination"></div>
@@ -71,9 +72,9 @@
               </div>
         </section>
 
-        <section class="container">
+        <section id="SystemPayment" class="ocultar-payment">
 
-            <form action="">
+            <form action="index.html">
 
                 <div class="row">
 
@@ -158,6 +159,7 @@
                 </div>
 
                 <button type="button" class="submit-btn" onclick="ValidarPago()">Pagar</button>
+                <button type="button" class="cancel-btn" onclick="">Atras</button>
 
             </form>
 

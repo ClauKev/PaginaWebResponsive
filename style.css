@@ -179,18 +179,15 @@ header::before {
 @media screen and (max-width: 500px) {
     .iconsmenu {
         margin-right: 0px;
-    
+        margin-top: 0;
     }
-}
-
-@media screen and (max-width: 300px) {
-
-    #logo {
-        width: 75%;
-        height: auto;
+    .mostrar {
+        left: 0;
     }
 
 }
+
+
 
 /* ---------Normal Home---------  */
 
@@ -861,7 +858,7 @@ iframe {
 
 @media screen and (max-width: 900px) {
 
-    .Home {
+    .HomeExtra {
         min-height: 120em;
         background-image: url(assetsnuevos/fondo2celular.jpg);
         width: 100%;

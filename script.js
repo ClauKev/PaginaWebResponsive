@@ -185,7 +185,32 @@ function ValidarRegister(){
 
 // ---------System Payment---------
 
+function EnviaraPayment(button){
+  const payment = document.getElementById("SystemPayment");
+  payment.classList.add("container");
+  payment.classList.remove("ocultar-payment");
+
+  const price = button.getAttribute('data-price');
+  
+  // Guardar el precio en localStorage
+  localStorage.setItem('selectedPrice', price);
+
+  // Actualizar el texto del botón de pago
+  const payButton = document.querySelector('.submit-btn');
+  payButton.textContent = `Pagar $${price}`;
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const savedPrice = localStorage.getItem('selectedPrice');
+  if (savedPrice) {
+      // Actualizar el texto del botón de pago al cargar la página
+      const payButton = document.querySelector('.submit-btn');
+      payButton.textContent = `Pagar $${savedPrice}`;
+  }
+});
+
 function ValidarPago() {
+  const savedPrice = localStorage.getItem('selectedPrice');
   var email = document.querySelector("input[type='email']").value;
   var pais = document.querySelector("input[placeholder='Argentina']").value;
   var localidad = document.querySelector("input[placeholder='Capital Federal']").value;
@@ -281,7 +306,7 @@ function ValidarPago() {
 
   // Si todos los campos son válidos
   if (validator) {
-    alert("Formulario enviado exitosamente!");
+    alert(`Pagaste exitosamente $${savedPrice}, se enviara la informacion del pago al correo. Gracias por tu compra.`);
     document.querySelector("form").submit();
   } else {
     alert("Por favor, corrige los errores en el formulario.");
