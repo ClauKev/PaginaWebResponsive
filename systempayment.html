@@ -20,33 +20,31 @@
 
     <header>
 
-        <img id="logo" src="assets/images/logo.png" alt="Logo">
+        <img id="logo" src="assetsnuevos/logoName.png" alt="Logo">
 
         <nav class="navbar">
             <ul class="ocultar" id="barrademenu">
                 <li onclick=CerrarMenu() class="iconsmenu"><i class='bx bx-x'></i></li>
-                <li class="OcultarenPC"><a href=index.html#Home>Home</a></li>
-                <li class="OcultarenPC"><a href=index.html#About>Información</a></li>
-                <li class="OcultarenPC"><a href=index.html#noticias>Noticias</a></li>
+                <li class="OcultarenPC"><a href="index.html#Home">Home</a></li>
+                <li class="OcultarenPC"><a href="index.html#About">Información</a></li>
+                <li class="OcultarenPC"><a href="index.html#SectionNoticias">Noticias</a></li>
                 <li class="OcultarenPC"><a href="extras.html" target="_blank">Extras</a></li>
-                <li class="OcultarenPC"><a href="login.html"><img class="iconlogin"
-                            src="assets/images/iconos/usuario.png" alt=""></a></li>
-            </ul>
-            <ul id="barrademenu2">
-                <li class="OcultarenMobile"><a href=index.html#Home>Home</a></li>
-                <li class="OcultarenMobile"><a href=index.html#About>Información</a></li>
-                <li class="OcultarenMobile"><a href=index.html#noticias>Noticias</a></li>
+                <li class="OcultarenPC"><a href="login.html"><i id="user" class='bx bx-user'></a></li>
+              </ul>
+              <ul id="barrademenu2">
+                <li class="OcultarenMobile"><a href="index.html#Home">Home</a></li>
+                <li class="OcultarenMobile"><a href="index.html#About">Información</a></li>
+                <li class="OcultarenMobile"><a href="index.html#SectionNoticias">Noticias</a></li>
                 <li class="OcultarenMobile"><a href="extras.html">Extras</a></li>
-                <li class="OcultarenMobile"><a href="login.html"><img class="iconlogin"
-                            src="assets/images/iconos/usuario.png" alt=""></a></li>
+                <li class="OcultarenMobile"><a href="login.html"><i id="user" class='bx bx-user'></a></li>
                 <li onclick=MostrarMenu() class="iconsmenu"><i class='bx bx-menu' id="menu-icon"></i></li>
-            </ul>
+              </ul>
         </nav>
     </header>
 
     <main>
         <h2 class="titulo">Selecciona una Edicion</h2>
-        <section id="SectionNoticias">
+        <section id="SectionEdition">
             <div class="container swiper">
                 <div class="slider-wrapper">
                   <div class="card-list swiper-wrapper">
@@ -178,7 +176,7 @@
             <div class="box">
                 <h4>CONTACTO</h4>
                 <form id="contacto">
-                    <img class="iconemail" src="assets/images/iconos/envelope.png" alt="">
+                    <i class='bx bx-envelope'></i>
                     <input type="email" id="emailfooter" placeholder="Ingresa tu correo">
                     <button type="submit" id="botonfooter">Enviar</button>
                 </form>

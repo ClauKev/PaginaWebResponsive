@@ -17,43 +17,43 @@
 
     <header>
 
-        <img id="logo" src="assets/images/logo.png" alt="Logo">
+        <img id="logo" src="assetsnuevos/logoName.png" alt="Logo">
         
         <nav class="navbar">
             <ul class="ocultar" id="barrademenu">
                 <li onclick=CerrarMenu() class="iconsmenu"><i class='bx bx-x'></i></li>
-                <li class="OcultarenPC"><a href=index.html#Home>Home</a></li>
-                <li class="OcultarenPC"><a href=index.html#About>Información</a></li>
-                <li class="OcultarenPC"><a href=index.html#noticias>Noticias</a></li>
+                <li class="OcultarenPC"><a href=#Home>Home</a></li>
+                <li class="OcultarenPC"><a href=#About>Información</a></li>
+                <li class="OcultarenPC"><a href=#SectionNoticias>Noticias</a></li>
                 <li class="OcultarenPC"><a href="extras.html" target="_blank">Extras</a></li>
-                <li class="OcultarenPC"><a href="login.html"><img class="iconlogin" src="assets/images/iconos/usuario.png" alt=""></a></li>
+                <li class="OcultarenPC"><a href="login.html"><i id="user" class='bx bx-user'></i></a></li>
             </ul>
             <ul id="barrademenu2">
-                <li class="OcultarenMobile"><a href=index.html#Home>Home</a></li>
-                <li class="OcultarenMobile"><a href=index.html#About>Información</a></li>
-                <li class="OcultarenMobile"><a href=index.html#noticias>Noticias</a></li>
+                <li class="OcultarenMobile"><a href="#Home">Home</a></li>
+                <li class="OcultarenMobile"><a href="#About">Información</a></li>
+                <li class="OcultarenMobile"><a href="#SectionNoticias">Noticias</a></li>
                 <li class="OcultarenMobile"><a href="extras.html">Extras</a></li>
-                <li class="OcultarenMobile"><a href="login.html"><img class="iconlogin" src="assets/images/iconos/usuario.png" alt=""></a></li>
+                <li class="OcultarenMobile"><a href="login.html"><i id="user" class='bx bx-user'></i></a></li>
                 <li onclick=MostrarMenu() class="iconsmenu"><i class='bx bx-menu' id="menu-icon"></i></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="Home">
+        <section id="Home" class="Home">
             <img id="logogrande" src="assetsnuevos/logo.png" alt="">
             <div class="botones">
                 <a href="systempayment.html" id="btn-1">PRECOMPRAR AHORA</a>
                 <a href="" id="btn-2">MÁS INFORMACIÓN</a>
             </div>
         </section>
-        <h2 class="titulo">Noticias</h2>
+        <h2 id="TituloNoticias" class="titulo">Noticias</h2>
         <section id="SectionNoticias">
             <div class="container swiper">
                 <div class="slider-wrapper">
                   <div class="card-list swiper-wrapper">
                     <div class="card-item swiper-slide">
-                      <img src="assets/images/a2.jpg" alt="Notice Image" class="notice-image">
+                      <img src="assetsnuevos/noticias/1.jpg" alt="Notice Image" class="notice-image">
                       <h6 class ="fecha">Fecha: 18/06/2024</h6>
                       <h3 class="nombreNoticia">PREVENTA ACTIVA</h3>
                       <p class="noticiaparrafo">¡La preventa ya está activa! Al reservar, obtendrás trajes (para ti y tu compañera), emotes exclusivos disponibles solo en esta fase, y podrás jugar una semana antes del lanzamiento oficial. Además, tendrás acceso anticipado al modo multijugador. ¿Qué esperas? ¡Únete pagando cualquiera de las tres versiones!</p>
@@ -71,7 +71,7 @@
                         <p class="noticiaparrafo">Animaciones al Colgarse: Se corrigió un problema en las animaciones que ocurría cuando el personaje intentaba colgarse de una barra, asegurando que ahora se agarre correctamente.</p>
                     </div>
                     <div class="card-item swiper-slide">
-                        <img src="assets/images/a1.jpg" alt="Notice Image" class="notice-image">
+                        <img src="assetsnuevos/noticias/2.jpg" alt="Notice Image" class="notice-image">
                         <h6 class ="fecha">Fecha: 25/10/2023</h6>
                         <h3 class="nombreNoticia">Introducción de Quick Time Events</h3>
                         <p class="noticiaparrafo">Se incorporo el sistema de Quick Time Events (QTE). Este nuevo sistema desafiará a los jugadores a reaccionar rápidamente a eventos en pantalla</p>
@@ -85,7 +85,7 @@
               </div>
         </section>
         <h2 class="titulo">Sobre el juego</h2>
-        <section class="aboutgame">
+        <section id="About" class="aboutgame">
             <div class="about-section">
                 <div class="inner-container">
                     <h3>Te damos la bienvenida a Tokyo</h3>
@@ -98,7 +98,7 @@
                     </p>
                 </div>
                 <div class="fotomediascreen">
-                    <img src="assets/images/ciudad 1 - copia.jpg" alt="">
+                    <img src="assetsnuevos/ciudad 1.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -167,7 +167,7 @@
             <div class="box">
                 <h4>CONTACTO</h4>
                 <form id="contacto">
-                    <img class="iconemail" src="assets/images/iconos/envelope.png" alt="">
+                    <i class='bx bx-envelope'></i>
                     <input type="email" id="emailfooter" placeholder="Ingresa tu correo">
                     <button type="submit" id="botonfooter">Enviar</button>
                 </form>

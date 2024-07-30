@@ -9,6 +9,10 @@
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     background-color: #1c1c1c;
     width: 100%;
@@ -48,7 +52,6 @@ header.scrolled {
 }
 
 header::before {
-
     content: '';
     position: absolute;
     top: 0;
@@ -58,7 +61,6 @@ header::before {
     background-color: rgba(0, 0, 0, .1);
     backdrop-filter: blur(10px);
     z-index: -1;
-
 }
 
 .navbar .iconsmenu {
@@ -67,9 +69,8 @@ header::before {
     right: 5%;
 }
 
-.iconlogin {
-    width: 25px;
-    margin-left: 10px;
+#user {
+    font-size: 25px;
 }
 
 .navbar a {
@@ -163,9 +164,8 @@ header::before {
         margin-top: 80px;
     }
 
-    #barrademenu .iconlogin {
-        width: 50px;
-        height: auto;
+    #barrademenu #user {
+        font-size: 55px;
     }
 
     #barrademenu a {
@@ -176,7 +176,7 @@ header::before {
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
     .iconsmenu {
         margin-right: 0px;
         margin-top: 0;
@@ -186,8 +186,6 @@ header::before {
     }
 
 }
-
-
 
 /* ---------Normal Home---------  */
 
@@ -395,7 +393,7 @@ header::before {
         margin: 0;
         position: absolute;
         top: 20%;
-        left: 0%
+        left: 1%
     }
 
     .botones {
@@ -407,7 +405,8 @@ header::before {
         margin-left: 0;
         position: absolute;
         top: 40%;
-        left: 0%
+        left: 0%;
+        margin-top: 30%;
     }
 
     #btn-1 , #btn-2 {
@@ -514,18 +513,18 @@ header::before {
     text-decoration: underline;
 }
 
-  #SectionNoticias {
+#SectionNoticias {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-  }
-  .slider-wrapper {
+    min-height: 100vh
+}
+.slider-wrapper {
     overflow: hidden;
     max-width: 1200px;
     margin: 0 70px 55px;
-  }
-  .card-list .card-item {
+}
+.card-list .card-item {
     height: auto;
     color: #fff;
     user-select: none;
@@ -535,48 +534,48 @@ header::before {
     justify-content: center;
     border-radius: 10px;
     backdrop-filter: blur(30px);
-  }
-  .card-list .card-item .notice-image {
+}
+.card-list .card-item .notice-image {
     width: 100%;
     height: auto;
     margin-bottom: 40px;
-  }
-  .card-list .card-item .noticiaparrafo {
+}
+.card-list .card-item .noticiaparrafo {
     font-size: 1.15rem;
     color: #e3e3e3;
     font-weight: 500;
     margin: 14px 0 40px;
     padding: 2%;
-  }
+}
 
-  .slider-wrapper .swiper-pagination-bullet {
+.slider-wrapper .swiper-pagination-bullet {
     background: #fff;
     height: 13px;
     width: 13px;
     opacity: 0.5;
-  }
-  .slider-wrapper .swiper-pagination-bullet-active {
+}
+.slider-wrapper .swiper-pagination-bullet-active {
     opacity: 1;
-  }
-  .slider-wrapper .swiper-slide-button {
+}
+.slider-wrapper .swiper-slide-button {
     color: #fff;
     margin-top: -55px;
     transition: 0.2s ease;
-  }
-  .slider-wrapper .swiper-slide-button:hover {
+}
+.slider-wrapper .swiper-slide-button:hover {
     color: #4658ff;
-  }
+}
 
 /* ---------Mediascreen Noticias--------- */
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .slider-wrapper {
       margin: 0 10px 40px;
     }
     .slider-wrapper .swiper-slide-button {
       display: none;
     }
-  }
+}
 
 /* ---------Normal About---------  */
 
@@ -590,7 +589,7 @@ header::before {
 }
 
 .about-section{
-    background: url(assets/images/ciudad\ 1.jpg) no-repeat left;
+    background: url(assetsnuevos/ciudad\ 4.jpg) no-repeat left;
     background-size: 55%;
     background-color: #1c1c1c;
     overflow: hidden;
@@ -862,7 +861,7 @@ iframe {
         min-height: 120em;
         background-image: url(assetsnuevos/fondo2celular.jpg);
         width: 100%;
-        background-position: center;
+        background-position: left;
         background-size: cover;
         background-repeat: no-repeat;
         justify-content: center;
