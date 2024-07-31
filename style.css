@@ -704,6 +704,16 @@ header::before {
 
 /* ---------Normal Masinfo--------- */
 
+.titulo2 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
 .moreinfo{
     min-height: 100vh;
     text-align: center;
@@ -723,6 +733,20 @@ iframe {
     margin-top: 3%;
     width: 100%;
     height: 500px;
+}
+
+/* ---------Mediascreen Masinfo--------- */
+
+@media screen and (max-width:400px){
+    .titulo2 {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        text-align: center;
+        text-decoration: underline;
+    }    
 }
 
 /* ---------Normal Footer--------- */
