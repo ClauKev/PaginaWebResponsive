@@ -46,7 +46,6 @@ header.scrolled {
 }
 
 header::before {
-
   content: '';
   position: absolute;
   top: 0;
@@ -56,7 +55,6 @@ header::before {
   background-color: rgba(0, 0, 0, .1);
   backdrop-filter: blur(10px);
   z-index: -1;
-
 }
 
 .navbar .iconsmenu {
@@ -92,7 +90,6 @@ header::before {
 
 .iconsmenu {
   display: none;
-  margin-right: 50px;
 
 }
 
@@ -157,7 +154,7 @@ header::before {
 
   #barrademenu li {
       width: 100%;
-      margin-top: 80px;
+      margin-top: 13%;
   }
 
   #barrademenu #user {
@@ -384,6 +381,10 @@ h3 {
 
 @media screen and (max-width: 458px) {
 
+  .titulo {
+    margin-top: 50%;
+  }
+
   #SectionEdition {
     position: relative;
     width: 100%;
@@ -418,7 +419,6 @@ h3 {
     margin-bottom: -30%;
     text-align: center;
     text-decoration: underline;
-  
   }
 
   #SectionEdition {
